@@ -8,8 +8,8 @@ License:	LGPL
 Group:		Libraries
 Source0:	%{name}-cvs-%{cvs}.tar.gz
 # Source0-md5:	525a9f986756db876ac0f5c1d19c17f9
-URL:		http://www.gnustepweb.org/
-BuildRequires:	gdl2-devel
+URL:		http://www.gnustepweb.org
+BuildRequires:	gnustep-db2-devel
 BuildRequires:	gsantlr-devel
 BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -78,20 +78,31 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README TODO
-#%{_prefix}/System/Library/Libraries/%{gscpu}/%{gsos}/%{libcombo}/lib*.so.*
-#%dir %{_prefix}/System/Library/Frameworks/*.framework
-#%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions
-#%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions/*
-#%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions/*/Resources
-#%{_prefix}/System/Library/Frameworks/*.framework/Versions/*/Resources/*.bundle
-#%{_prefix}/System/Library/Frameworks/*.framework/Versions/*/Resources/*.plist
-#%{_prefix}/System/Library/Frameworks/*.framework/Versions/*/%{gscpu}/%{gsos}/%{libcombo}/*.so.*
+%{_prefix}/System/Library/Libraries/%{gscpu}/%{gsos}/%{libcombo}/lib*.so.*
+%dir %{_prefix}/System/Library/Frameworks/*.framework
+%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions
+%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions/?
+%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/Current
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/*.plist
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/%{gscpu}/%{gsos}/%{libcombo}/*.so.*
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/*.gswc
+%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/WebServer
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/WebServer/*.png
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/WebServer/*.mng
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/*.wo
+%lang(fr) %{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/French.lproj
+%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/DTDs
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/DTDs/*.ent
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Resources/DTDs/*.dtd
+%dir %{_prefix}/System/Library/Libraries/Resources/DTDs
+%{_prefix}/System/Library/Libraries/Resources/DTDs/*.ent
+%{_prefix}/System/Library/Libraries/Resources/DTDs/*.dtd
 
 %files devel
 %defattr(644,root,root,755)
-#%{_prefix}/System/Library/Libraries/%{gscpu}/%{gsos}/%{libcombo}/lib*.so
-#%{_prefix}/System/Tools/%{gscpu}/%{gsos}/%{libcombo}/*
-#%{_prefix}/System/Tools/%{gscpu}/%{gsos}/%{libcombo}/*
-#%{_prefix}/System/Library/Libraries/%{gscpu}/%{gsos}/%{libcombo}/*.so
-#%{_prefix}/System/Library/Frameworks/*.framework/Headers
-#%{_prefix}/System/Library/Frameworks/*.framework/Versions/*/Headers/*
+%{_prefix}/System/Library/Libraries/%{gscpu}/%{gsos}/%{libcombo}/lib*.so
+%{_prefix}/System/Makefiles/Auxiliary/*.make
+%{_prefix}/System/Library/Frameworks/*.framework/Headers
+%dir %{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Headers
+%{_prefix}/System/Library/Frameworks/*.framework/Versions/?/Headers/*
