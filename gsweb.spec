@@ -1,5 +1,5 @@
-Summary:	MIME library for GNUstep
-Summary(pl):	Biblioteka MIME dla ¶rodowiska GNUstep
+Summary:	WebObjects 4.x compatible library
+Summary(pl):	Biblioteka kompatybilna z WebObjects 4.x
 Name:		gsweb
 Version:	0
 %define cvs 20041118
@@ -8,7 +8,7 @@ License:	LGPL
 Group:		Libraries
 Source0:	%{name}-cvs-%{cvs}.tar.gz
 # Source0-md5:	525a9f986756db876ac0f5c1d19c17f9
-URL:		http://www.gnustepweb.org
+URL:		http://www.gnustepweb.org/
 BuildRequires:	gdl2-devel
 BuildRequires:	gsantlr-devel
 BuildRequires:	libxml2-devel
@@ -26,6 +26,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %endif
 
 %description
+GNUstepWeb is a library which was designed to be compatible with
+WebObjects 4.x (developed by NeXT (now Apple) Inc.).
+
+This library is a logic extension of the GNUstep project. It should
+help Objective-C, OpenStep and WebObjects to become standards.
+
+%description -l pl
+GNUstepWeb to biblioteka zaprojektowana by byæ kompatybiln± z
+WebObjects 4.x (stworzon± przez NeXT (teraz Apple) Inc.).
+
+Ta biblioteka jest logicznym rozszerzeniem projektu GNUstep. Powinna
+pomóc Objective-C, OpenStepowi i WebObjects w staniu siê standardami.
 
 %package devel
 Summary:	Header files for gsweb library
