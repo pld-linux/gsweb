@@ -8,7 +8,7 @@ License:	LGPL
 Group:		Libraries
 Source0:	%{name}-cvs-%{cvs}.tar.gz
 # Source0-md5:	525a9f986756db876ac0f5c1d19c17f9
-URL:		http://www.gnustepweb.org
+URL:		http://www.gnustepweb.org/
 BuildRequires:	gnustep-db2-devel
 BuildRequires:	gsantlr-devel
 BuildRequires:	libxml2-devel
