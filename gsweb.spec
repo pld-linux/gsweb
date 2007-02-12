@@ -1,5 +1,5 @@
 Summary:	WebObjects 4.x compatible library
-Summary(pl):	Biblioteka kompatybilna z WebObjects 4.x
+Summary(pl.UTF-8):   Biblioteka kompatybilna z WebObjects 4.x
 Name:		gsweb
 Version:	0
 %define cvs 20041118
@@ -32,24 +32,24 @@ WebObjects 4.x (developed by NeXT (now Apple) Inc.).
 This library is a logic extension of the GNUstep project. It should
 help Objective-C, OpenStep and WebObjects to become standards.
 
-%description -l pl
-GNUstepWeb to biblioteka zaprojektowana by byæ kompatybiln± z
-WebObjects 4.x (stworzon± przez NeXT (teraz Apple) Inc.).
+%description -l pl.UTF-8
+GNUstepWeb to biblioteka zaprojektowana by byÄ‡ kompatybilnÄ… z
+WebObjects 4.x (stworzonÄ… przez NeXT (teraz Apple) Inc.).
 
 Ta biblioteka jest logicznym rozszerzeniem projektu GNUstep. Powinna
-pomóc Objective-C, OpenStepowi i WebObjects w staniu siê standardami.
+pomÃ³c Objective-C, OpenStepowi i WebObjects w staniu siÄ™ standardami.
 
 %package devel
 Summary:	Header files for gsweb library
-Summary(pl):	Pliki nag³ówkowe biblioteki gsweb
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki gsweb
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for gsweb library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki gsweb.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki gsweb.
 
 %prep
 %setup -q -n %{name}
