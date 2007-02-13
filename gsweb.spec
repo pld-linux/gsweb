@@ -1,5 +1,5 @@
 Summary:	WebObjects 4.x compatible library
-Summary(pl.UTF-8):   Biblioteka kompatybilna z WebObjects 4.x
+Summary(pl.UTF-8):	Biblioteka kompatybilna z WebObjects 4.x
 Name:		gsweb
 Version:	0
 %define cvs 20041118
@@ -41,7 +41,7 @@ pomóc Objective-C, OpenStepowi i WebObjects w staniu się standardami.
 
 %package devel
 Summary:	Header files for gsweb library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki gsweb
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki gsweb
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
